@@ -4,12 +4,18 @@ Team members: Poplar, Andrew
 Model Description Short: A KNN model to forecast the number of new
 COVID-19 Cases
 
-Model Description Long:
+Model Description Long: K Nearest Neighbors is an algorithm that uses the patterns of confirmed cases in counties to predict that of our target county. 
 
  - Model assumptions
+  Model assumes that there is a correlation between the confirmed cases numbers in neighboring counties to our target county. 
 
  - Model pros and cons
-
+  Pros: useful for nonlinear data
+        simple concept and algorithm
+        
+  Cons: large amount of data
+        only applicable when the data is related to the closer database.
+        
  - What data sources did you use
 
  - What variables from those data sources did you use. Why?
