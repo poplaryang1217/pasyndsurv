@@ -7,9 +7,22 @@ COVID-19 Cases
 Model Description Long:
 
  - Model assumptions
+   KNN model classifies data based on the similarity measures to its neighbors. 
+   Neighbor = similar data trends in different counties
+   K (number of neighbors) = 5
+   Distance metrics: euclidean distance
+   Build upon the ARIMA model
 
  - Model pros and cons
-
+   Pros:
+     - KNN is a simple algorithm that is easy to understand and interpret.
+     - The model classifies the data based on their closeness, and each dataset learns from each other. We train our model by backtracking. 
+       We also plan to apply different distance metrics to evaluate the forecasts.
+   Cons:
+     - KNN can be sensitive to noise, surveillance data tends to be noisy
+     - Previous upswings in number of recorded cases could be swaying our forecasts to be sloping upwards
+   
  - What data sources did you use
+   PA DOH, CDC, JHU, and Covid tracker.
 
  - What variables from those data sources did you use. Why?
